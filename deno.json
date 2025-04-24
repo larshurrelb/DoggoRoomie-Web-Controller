@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "start": "deno run --allow-net --allow-read main.ts",
+    "dev": "deno run --watch --allow-net --allow-read main.ts"
+  },
+  "imports": {
+    "$std/": "https://deno.land/std@0.217.0/",
+    "oak": "https://deno.land/x/oak@v17.1.3/mod.ts",
+    "mqtt": "https://deno.land/x/mqtt@0.1.2/deno/mod.ts"
+  },
+  "compilerOptions": {
+    "lib": ["deno.window", "dom"],
+    "strict": true,
+    "checkJs": true
+  }
+}

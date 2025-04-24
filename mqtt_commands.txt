@@ -1,0 +1,122 @@
+
+Valetudo Main Node
+
+	•	$state = ready
+	•	$homie = 4.0.0
+	•	$name = c-3po
+	•	$nodes = MapData, ValetudoEvents, BasicControlCapability, OperationModeControlCapability, FanSpeedControlCapability, WaterUsageControlCapability
+
+Map Data Node
+
+	•	$name = Map data
+	•	$type = Map
+	•	$properties = map-data, segments, map-data-hass
+	•	map-data: x... (binary map representation)
+	•	segments: {} (empty)
+	•	map-data-hass: Binary PNG data
+
+Valetudo Events Node
+
+	•	$name = Valetudo Events
+	•	$type = Events
+	•	$properties = valetudo_events, valetudo_events/interact
+	•	valetudo_events
+	•	$name = Events
+	•	$datatype = string
+	•	$settable = false
+	•	$retained = true
+	•	$format = json
+	•	interact
+
+Basic Control Capability Node
+
+	•	$name = Basic control
+	•	$type = Capability
+	•	$properties = operation
+	•	operation
+	•	$name = Operation
+	•	$datatype = enum
+	•	$settable = true
+	•	$retained = false
+	•	$format = START, STOP, PAUSE, HOME
+
+Operation Mode Control Capability Node
+
+	•	$name = Mode control
+	•	$type = Capability
+	•	$properties = preset
+	•	preset
+	•	$name = Mode
+	•	$datatype = enum
+	•	$settable = true
+	•	$retained = true
+	•	$format = vacuum, vacuum_and_mop, mop
+
+Fan Speed Control Capability Node
+
+	•	$name = Fan control
+	•	$type = Capability
+	•	$properties = preset
+	•	preset
+	•	$name = Fan
+	•	$datatype = enum
+	•	$settable = true
+	•	$retained = true
+	•	$format = low, medium, high, max
+
+Water Usage Control Capability Node
+
+	•	$name = Water Usage Control
+	•	$type = Capability
+	•	$properties = ...
+
+WiFi Configuration Capability Node
+
+	•	$name = WiFi Configuration
+	•	$type = Capability
+	•	$properties = ...
+
+Locate Capability Node
+
+	•	$name = Locate
+	•	$type = Capability
+	•	$properties = locate
+	•	locate
+	•	$name = Locate
+	•	$datatype = enum
+	•	$settable = true
+	•	$retained = false
+	•	$format = PERFORM
+
+Zone Cleaning Capability Node
+
+	•	$name = Zone Cleaning
+	•	$type = Capability
+
+Map Segmentation Capability Node
+
+	•	$name = Map Segmentation
+	•	$type = Capability
+
+Hass Attributes
+
+	•	MonumentalCheerfulAlligator_sensor_ValetudoEvents = 0
+	•	MonumentalCheerfulAlligator_sensor_WifiConfigurationCapability = {"state": -38, "attributes": {"ssid": "AirLink", "ips": ["192.168.1.4"]}}
+	•	MonumentalCheerfulAlligator_vacuum = {"state": "idle", "battery_level": 98, "fan_speed": "low"}
+	•	MonumentalCheerfulAlligator_sensor_MapSegments = 0
+
+Status State Attribute
+
+	•	$name = Vacuum status
+	•	$type = Status
+	•	$properties = status, flag, error_description, error
+	•	status
+	•	$name = Status
+	•	$datatype = enum
+	•	$settable = false
+	•	$retained = true
+	•	$format = error, docked, idle, returning, cleaning, paused, manual_control, moving
+	•	flag: none
+	•	error_description: No error
+	•	error: {"severity": {"kind": "none", "level": "none"}, "subsystem": "none", "message": ""}
+

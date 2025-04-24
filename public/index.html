@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robot Control</title>
+    <link rel="stylesheet" href="/style.css">
+    <script type="module" src="/config.js"></script>
+    <script type="module" src="/facetrigger.js"></script>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-indicator">
+            <div class="status-dot" id="valetudo-status"></div>
+            <span>Valetudo</span>
+        </div>
+        <div class="status-indicator">
+            <div class="status-dot" id="arduino-status"></div>
+            <span>Arduino</span>
+        </div>
+        <div class="status-indicator">
+            <div class="status-dot" id="websocket-status"></div>
+            <span>WebSocket</span>
+        </div>
+    </div>
+    <div class="controls-panel">
+        <h2>Controls</h2>
+        
+        <div class="control-section">
+            <h3>Movement Controls</h3>
+            <div class="control-group">
+                <h4>Robot Movement</h4>
+                <ul class="controls-list">
+                    <li><span class="key">Space</span> Toggle controls</li>
+                    <li><span class="key">W</span> or <span class="key">↑</span> Forward</li>
+                    <li><span class="key">S</span> or <span class="key">↓</span> Backward</li>
+                    <li><span class="key">A</span> or <span class="key">←</span> Left</li>
+                    <li><span class="key">D</span> or <span class="key">→</span> Right</li>
+                </ul>
+            </div>
+            
+            <div class="control-group">
+                <h4>Tail Speed</h4>
+                <ul class="controls-list">
+                    <li><span class="key">T</span> Slow</li>
+                    <li><span class="key">Z</span> Normal</li>
+                    <li><span class="key">U</span> Fast</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="control-section">
+            <h3>Face Controls</h3>
+            <ul class="controls-list">
+                <li><span class="key">1</span> Idle</li>
+                <li><span class="key">2</span> Puppy eyes</li>
+                <li><span class="key">3</span> Staring</li>
+                <li><span class="key">4</span> Happy</li>
+                <li><span class="key">5</span> Panting</li>
+                <li><span class="key">6</span> Sighing</li>
+                <li><span class="key">7</span> Barking</li>
+                <li><span class="key">8</span> Woofing</li>
+                <li><span class="key">9</span> Bumping</li>
+                <li><span class="key">0</span> Gaze left</li>
+                <li><span class="key">ß</span> Gaze right</li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <canvas id="canvas"></canvas>
+        <div id="triggerStatus">Current Trigger: None</div>
+        <div id="status" class="inactive">Status: Ready</div>
+        <div id="keyPressed">No key pressed</div>
+    </div>
+    
+    <audio id="audio1" src="audio/1.wav" preload="auto"></audio>
+
+    <script src="https://unpkg.com/@rive-app/canvas@2.20.0"></script>
+    <script src="rive.js"></script>
+    <script src="control.js"></script>
+    <script src="facetrigger.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            window.FaceTriggerController.initialize();
+        });
+    </script>
+</body>
+</html>
