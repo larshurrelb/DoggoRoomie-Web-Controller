@@ -19,7 +19,7 @@ This repository contains the necessary tools to manage and control the robot's m
 The project consists of two parts:
 
 1. **Main Controller App** - Root of this repository, runs locally via localhost
-2. **Web Deployed Face** - Located in `/web_deployed_face/`, needs to be deployed on the web
+2. **Web Deployed Face** - Located in `/web_deployed_face.zip`, needs to be deployed on the web
 
 Both components use Deno (a modern alternative to NodeJS) as their runtime.
 
@@ -43,7 +43,7 @@ Both components use Deno (a modern alternative to NodeJS) as their runtime.
 
 1. On the tablet, open Chrome and visit the robot dog face website:
    - URL: https://remote-dog-face-123.deno.dev/
-   - If not hosted anymore, deploy the content of `/web_deployed_face/` yourself 
+   - If not hosted anymore, deploy the content of `/web_deployed_face.zip` yourself 
      (Recommended services: Deno Deploy or Netlify)
 
 2. Start the controller app:
