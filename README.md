@@ -1,6 +1,6 @@
 # 🐕 DoggoRoomie Web Controller
 
-![DoggoRoomie Robot](/doggo-roomie.png "DoggoRoomie Robot"){width="400px"}
+<img src="/doggo-roomie.png" alt="DoggoRoomie Robot" title="DoggoRoomie Robot" width="300" />
 
 Welcome to the DoggoRoomie - Fluffy Tightrope Web Controller repository! This project provides web-based applications designed to control a zoomorphic dog-like robot, developed as part of our study:
 
