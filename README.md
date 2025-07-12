@@ -34,7 +34,7 @@ Both components use Deno (a modern alternative to NodeJS) as their runtime.
     - The Samsung Tablet
 2.⁠ ⁠Configure the IP addresses in ⁠ /public/config.js ⁠ to match the actual IP addresses of devices in your local network
 
-(The current router shows ip adresses of connected devices on its webinterface under http://192.168.1.1/)
+(The current router shows ip addresses of connected devices on its webinterface under http://192.168.1.1/)
 
 ### Hardware Setup
 
