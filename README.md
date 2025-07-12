@@ -27,12 +27,14 @@ Both components use Deno (a modern alternative to NodeJS) as their runtime.
 
 ### Network Configuration
 
-1. Ensure the device running this controller app is on the same network as:
+1. Ensure the device running this controller app is connected to the same airlink router (2.4 GHz!) as:
    - The vacuum robot (Valetudo)
    - The Arduino (Feather ESP8266)
    - The Samsung Tablet
 
 2. Configure the IP addresses in `/public/config.js` to match the actual IP addresses of devices in your local network
+
+(The current router shows ip adresses of connected devices on its webinterface under http://192.168.1.1/)
 
 ### Hardware Setup
 
