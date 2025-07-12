@@ -38,14 +38,15 @@ Both components use Deno (a modern alternative to NodeJS) as their runtime.
 
 ### Hardware Setup
 
-1.⁠ ⁠⁠Connect the LiPo battery to the Feather and insert 4 AA batteries into the battery pack
+1. Connect the LiPo battery to the Feather and insert 4 AA batteries into the battery pack
     
-    ⚠️ *Don’t reverse the polarity!* The *red wire* of the LiPo battery should be on the *right side* when connecting — the *BAT pin* should be next to it
+    ⚠️ **Don't reverse the polarity!** The **red wire** of the LiPo battery should be on the **right side** when connecting — the **BAT pin** should be next to it
     
-    🔋The LiPo battery discharges quickly → to recharge it, keep it connected to the Feather and plug the Feather into a laptop via micro USB
-    
-2.⁠ ⁠Ensure all wired connections are secure
-3.⁠ ⁠⁠Make sure the robot vacuum is turned on
+    🔋 The LiPo battery discharges quickly → to recharge it, keep it connected to the Feather and plug the Feather into a laptop via micro USB
+
+2. Ensure all wired connections are secure
+
+3. Make sure the robot vacuum is turned on 
 
 ### Running the Application
 
